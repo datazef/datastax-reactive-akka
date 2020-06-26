@@ -19,7 +19,7 @@
     </logger>
 
     <!-- AKKA STUFF -->
-    <logger name="akka" level="INFO"
+    <logger name="akka" level="DEBUG"
             additivity="false">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="LOGSTASH" />

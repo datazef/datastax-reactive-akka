@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.6"
 
-val akkaVersion = "2.6.4"
+val akkaVersion = "2.6.6"
 val circeVersion = "0.12.3"
 val akkaHttpVersion = "10.1.11"
 val dseDriverVersion = "4.5.1"
@@ -19,7 +19,9 @@ libraryDependencies ++=
   Seq(
     "com.typesafe.akka" %% "akka-actor",
     "com.typesafe.akka" %% "akka-stream",
-    "com.typesafe.akka" %% "akka-slf4j").map(_ % akkaVersion) ++
+    "com.typesafe.akka" %% "akka-slf4j",
+    "com.typesafe.akka" %% "akka-cluster",
+    "com.typesafe.akka" %% "akka-cluster-tools").map(_ % akkaVersion) ++
   Seq(
     "io.circe" %% "circe-core",
     "io.circe" %% "circe-generic",

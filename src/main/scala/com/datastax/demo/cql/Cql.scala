@@ -22,7 +22,7 @@ case class Cql() {
 
   def init(): Unit = {
     logger.info("Initializing cql dao ...")
-    members.init()
+//    members.init()
   }
 }
 
